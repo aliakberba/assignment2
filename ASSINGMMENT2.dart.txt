@@ -1,0 +1,100 @@
+                                  "  ANSWER:Q3 "                                      
+
+void main(){
+ num tickets=600;
+  num cost=tickets *5;
+  print("the price of the tickets is ${cost}");
+  
+}
+
+
+                                   " ANSWER:Q4 "
+                                               
+  
+void main() {
+  var lst1 = [1, 2, 3, 4, 5, 6, 7];
+  var lst2 = [3, 5, 6, 7, 9, 10];
+  lst1.removeWhere((e) => lst2.contains(e));
+  print(lst1);
+}
+
+                                   " ANSWER:Q7 "
+
+ void main(){
+  var lst1=[1,2,3,4,5,6,7,8,9,10];
+   var lst2=[7,14,21,28,35,42,49,56,63,70];
+   var table= Map.fromIterables(lst1,lst2);
+   print(table);
+   
+   
+   
+ } 
+
+                                   " ANSWER:Q8 "
+void main() {
+var password1= "Ezio Auditore";
+stdout.write("enter your password");
+var password2 = stdin.readLineSync();
+print (password2);
+if(password1==password2){
+  print("you have entered correct password");
+} else if(password1!=password2){
+       print("you have entered incorrect password");
+}
+
+} 
+
+                                   " ANSWER:Q9 "
+
+void main (){
+  var name=["ali","samar","anas"];
+  var marks=[310,360,370];
+  int total=500;
+  var percentage1=(310/total)*100;
+  var percentage2=(360/total)*100;
+  var percentage3=(370/total)*100;
+  print("percenatge of ali  is ${percentage1}");
+  print("percentage of samar is ${percentage2}");
+  print("percentage of anas is ${percentage3}");
+  
+} 
+   
+                                   " ANSWER:Q11 "
+
+void main (){
+ var city1=("hyder" + "abad");
+ var city2=("Islam");
+ var result=city1.replaceAll("hyder","Islam");
+  print(result);
+} 
+                                             
+                        
+
+                                                         "ANSWER:Q12"
+
+import 'dart:io';                             
+void main() {
+
+stdout.write("Enter Customer name = ");
+var Name = stdin.readLineSync();
+
+stdout.write("Enter Current Month = ");
+var Month = stdin.readLineSync();
+
+stdout.write("Enter Number Of Units = ");
+double units = double.parse(stdin.readLineSync()!);
+
+int Chargesperunit=12;
+
+double NetAm= ((units)*(Chargesperunit));
+double latePayment= 0.2*(NetAm);
+double GrossAm=(NetAmount)+(latePayment);
+
+print("Your Bill is : ");
+print("Name = $Name");
+print("Current Month = $Month");
+print("Number Of Units You Have Used = $units");
+print("Net Amount within due date = $NetAm");
+print("Gross Payment after due date = $GrossAm ");
+
+}
